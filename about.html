@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Shaurya Deep | About</title>
+</head>
+<body>
+    <div class="content" id="about">
+        <h2 class="animatedtext">I am a <span id="developer-type">.</span></h2>
+        <p>Welcome to my portfolio! I’m passionate about coding and design, with expertise in HTML, CSS, and JavaScript. I’ve developed several projects using these technologies, which you can explore in my projects section. I am also a Native Android Developer with a deeper focus on Android development compared to web development. I’ve enhanced my skills through professional courses and tutorials from platforms such as YouTube, Google, and other educational resources. I also have some exeriences in IOT development.</p><p class="s">Shaurya Deep.</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><button class="btn"><a href="index.html">Home</a></button></li>
+            <li><button class="btn"><a href="about.html">About</a></button></li>
+            <li><button class="btn"><a href="projects.html">Projects</a></button></li>
+            <li><button class="btn"><a href="skills.html">Skills</a></button></li>
+        </ul>
+    </nav>
+    <script>
+        const developerTypes = ["Web Developer.", "Android Developer.", "IOT Developer."];
+let currentType = 0;
+let currentLetter = 0;
+let isDeleting = false;
+const speed = 150;  // Typing speed in milliseconds
+const delayBetweenTypes = 1000;  // Delay between changing types
+
+function typeEffect() {
+  const typeElement = document.getElementById("developer-type");
+  const fullText = developerTypes[currentType];
+
+  if (isDeleting) {
+    typeElement.textContent = fullText.substring(0, currentLetter - 1);
+    currentLetter--;
+  } else {
+    typeElement.textContent = fullText.substring(0, currentLetter + 1);
+    currentLetter++;
+  }
+
+  if (!isDeleting && currentLetter === fullText.length) {
+    isDeleting = true;
+    setTimeout(typeEffect, delayBetweenTypes);
+  } else if (isDeleting && currentLetter === 0) {
+    isDeleting = false;
+    currentType = (currentType + 1) % developerTypes.length;
+    setTimeout(typeEffect, 500);
+  } else {
+    setTimeout(typeEffect, speed);
+  }
+}
+
+// Start the typing effect
+typeEffect();
+    </script>
+</body>
+</html>

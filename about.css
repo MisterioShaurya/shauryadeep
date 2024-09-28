@@ -1,0 +1,89 @@
+body {
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.animatedtext{
+    font-size: 38px;
+}
+
+p.s{
+    text-align: right;
+    padding-right: 40px;
+    font-size: 18px;
+}
+
+div.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+div.content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+div.content p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0; /* Position the navbar at the bottom */
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.68);
+    padding: 10px 0;
+    z-index: 1000;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 35%;
+    text-align: center; /* Center the nav items */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.li a:hover {
+    color: white;
+}
+
+.btn:hover{
+    border-radius: 2px;
+    background-color: rgb(31, 31, 31);
+}
+
+button.btn{
+    background-color: transparent;
+    border: none;
+}

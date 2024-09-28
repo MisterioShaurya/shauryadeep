@@ -1,0 +1,140 @@
+/* Body Styling */
+body{
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    bottom: 0; /* Position the navbar at the bottom */
+    /* width: 100%; */
+    background-color: rgba(0, 0, 0, 0.68);
+    padding: 10px 0;
+    z-index: 1000;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 35%;
+    text-align: center; /* Center the nav items */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.li a:hover {
+    color: white;
+}
+
+.btn:hover{
+    border-radius: 2px;
+    background-color: rgb(31, 31, 31);
+}
+
+button.btn{
+    background-color: transparent;
+    border: none;
+}
+
+/* Main Head Container */
+div.headcontainer {
+    background-color: rgba(0, 0, 0, 0.58);
+    border-radius: 25px;
+    width: 50%; 
+    text-align: center;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+    margin-top: 50px; /* Adjusted margin to account for the space needed */
+}
+
+div.headcontainer:hover {
+    transform: scale(1.1);
+}
+
+div.headcontainer:active {
+    transform: scale(1);
+}
+
+/* Main Head Styling */
+h1.mainhead {
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span.dot {
+    color: purple;
+    font-size: 80px;
+    font-family: cursive;
+}
+
+/* Content Section */
+div.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+div.content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+div.content p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+}
+
+.skills {
+    text-align: right; 
+    padding-top: 2px; 
+    padding-bottom: 2px; 
+    color: white; 
+    border-radius: 5px;
+}
+  .html {width: 95%; background-color: rgb(170, 216, 230);} 
+  .css {width: 80%; background-color: rgb(180, 220, 232);} 
+  .python {width: 85%; background-color: rgb(190, 216, 230);}  
+  .java {width: 70%; background-color: rgb(200, 216, 230);}  
+  .kotlin {width: 60%; background-color: rgb(210, 216, 230);}   
+  .myskills{
+    font-size:40px;
+    text-align:center;
+}
+  .skillval{
+    padding-right: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+}
+.contaner{
+    width: 30px;
+    height: 40px;
+}
